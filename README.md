@@ -79,7 +79,7 @@ ILogger logger = new Logger(config =>
 });
 ```
 
-### Useage
+### Usage
 ```csharp
 logger.Info("Info message");
 logger.Error("Error message");
