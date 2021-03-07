@@ -88,7 +88,7 @@ logger.Debug("Debug message");
 
 
 ## Test results of FileLogger
-During the 2 instances of FileLogger were using. The test application is attached to source, [Program.cs](https://github.com/miklosa/Mrp.Logger/blob/main/Mrp.Logger/Test/TestFileLogger/Program.cs)
+There were two initialized FileLoggers during the test. The test application is attached to the source - [Program.cs](https://github.com/miklosa/Mrp.Logger/blob/main/Mrp.Logger/Test/TestFileLogger/Program.cs)
 ```csharp
 ILogger logger = new Logger(config =>
 {
