@@ -33,7 +33,7 @@ using Mrp.Logger.Interfaces;
 ```
 
 ### Sample configuration
-###### FileLogger with Default settings - [BaseConfigure.cs](https://github.com/miklosa/Mrp.Logger/blob/main/Mrp.Logger/Mrp.Logger/BaseLogger/Configure/BaseConfigure.cs)
+###### FileLogger with Default settings
 ```csharp
 ILogger logger = new Logger(config =>
 {
