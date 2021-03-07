@@ -110,7 +110,7 @@ ILogger logger2 = new Logger(config =>
 ```
 ##### Test Summary
 I hope you will be able to reproduce my results
-* The test was running time 2 minutes 15-20 seconds.
+* The test was running 2 minutes 15-20 seconds.
 * The size of the generated log files was 19,7 GB
 * Average writing speed was higher than 140 MB / sec
 * Usage of RAM was less than 210 MB
