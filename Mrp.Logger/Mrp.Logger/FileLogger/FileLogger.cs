@@ -63,7 +63,11 @@ namespace Mrp.Logger.FileLogger
 			=> Directory.GetFiles(_config.LogDirectoryPath, _config.ArchivingFileSearchingPattern).ToList();
 
 		private int GetMaxArchivedLogEntry(List<string> allArchivedLogFiles)
-			=> allArchivedLogFiles.Select(s => Convert.ToInt32(Path.GetFileNameWithoutExtension(s).Split('.')[1])).Max();
+			=> allArchivedLogFiles.Select(s => 
+				Convert.ToInt32(
+					Path.GetFileNameWithoutExtension(s)
+						.Split(_config.SeparatorCharOfArchivedFileName)[_config.PositionOfSerialNumberOfArchivedFileName])
+			).Max();
 
 		private string GetNextArchiveLogFilePath()
 		{

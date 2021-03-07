@@ -23,8 +23,21 @@ namespace Mrp.Logger.FileLogger.Configure
 		/// <summary>
 		/// Default value is "log.*.txt"
 		/// <br>* - position sign of the serial number of archive file</br>
+		/// <br>This depends on the pattern of ArchivedLogFilePattern</br>
 		/// </summary>
 		public string ArchivingFileSearchingPattern { get; set; } = "log.*.txt";
+
+		/// <summary>
+		/// Default separator char is '.'
+		/// <br>This depends on the pattern of ArchivedLogFilePattern</br>
+		/// </summary>
+		public char SeparatorCharOfArchivedFileName { get; set; } = '.';
+
+		/// <summary>
+		/// Default value is 1
+		/// <br>This depends on the pattern of ArchivedLogFilePattern</br>
+		/// </summary>
+		public int PositionOfSerialNumberOfArchivedFileName { get; set; } = 1;
 
 		/// <summary>
 		/// Default value is the root folder of the running application
